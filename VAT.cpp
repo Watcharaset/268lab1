@@ -4,12 +4,13 @@ int main () {
 	float A, B, C, sum, sum1, sum2;
 	scanf("%f %f %f" ,&A, &B, &C);
 	
-	sum = A * 0.95 * 1.07;
+	sum = A * 0.95 -(A* 0.07);
 	printf("%.2f\n", sum);
 	
-	sum1 = (A + B)* 0.85 * 1.07;
+	sum1 = (A + B)* 0.85 -((A+B)* 0.07);
 	printf("%.2f\n", sum1);
 	
-	sum2 = (A + B + C)* 0.7 * 1.07;
+	sum2 = (A + B + C)* 0.7 - ((A+B+C) * 0.07);
 	printf("%.2f\n", sum2);
 }
+
